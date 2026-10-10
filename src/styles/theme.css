@@ -10,25 +10,25 @@
   --font-app: var(--font-google-sans-code);
 }
 
-/* Light theme values */
+/* Light theme values (Terminal Amber on Warm Paper) */
 :root,
 [data-theme="light"] {
-  --background: #fdfdfd;
-  --foreground: #282728;
-  --accent: #006cac;
+  --background: #faf8f5;
+  --foreground: #1c1917;
+  --accent: #d97706;
   --accent-foreground: #ffffff;
-  --muted: #e6e6e6;
-  --muted-foreground: #6b7280;
-  --border: #ece9e9;
+  --muted: #f4f0ea;
+  --muted-foreground: #78716c;
+  --border: #e7e2da;
 }
 
-/* Dark theme values */
+/* Dark theme values (Phosphor Terminal Amber on Matte Charcoal) */
 [data-theme="dark"] {
-  --background: #212737;
-  --foreground: #eaedf3;
-  --accent: #ff6b01;
-  --accent-foreground: #ffffff;
-  --muted: #343f60;
-  --muted-foreground: #afb9ca;
-  --border: #ab4b08;
+  --background: #18181b;
+  --foreground: #f4f4f5;
+  --accent: #f59e0b;
+  --accent-foreground: #18181b;
+  --muted: #27272a;
+  --muted-foreground: #a1a1aa;
+  --border: #3f3f46;
 }
