@@ -19,19 +19,11 @@ One of the greatest security blind spots in modern software engineering and oper
 
 1Password solves this problem across two distinct operational horizons:
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│                     1PASSWORD SECRETS MANAGEMENT PARADIGM                              │
-├──────────────────────────┬─────────────────────────────────────────────────────────────┤
-│ 1. LOCAL WORKSTATIONS    │ • 1Password Environments with LOCALLY MOUNTED `.env` FILES. │
-│    (Interactive macOS)   │ • Leverages UNIX Named Pipes (FIFOs).                       │
-│                          │ • 0 bytes written to disk; authorized via Touch ID.         │
-├──────────────────────────┼─────────────────────────────────────────────────────────────┤
-│ 2. HEADLESS SERVERS      │ • 1Password CLI (`op run`) + SERVICE ACCOUNTS.              │
-│    (Headless Linux nodes)│ • Secret Reference URIs (`op://HomeLab/Item/Field`).        │
-│                          │ • Machine token injection into RAM; safe in git & backups.  │
-└──────────────────────────────────────────────────────────┴─────────────────────────────┘
-```
+> [!NOTE] 1. Local Workstations (macOS)
+> **Developer Environments & Named Pipes:** Mounts `.env` files dynamically using UNIX named pipes (FIFOs). Exactly 0 bytes are written to physical disk, and process access is authorized biometrically via Touch ID.
+
+> [!TIP] 2. Headless Servers (Linux)
+> **1Password CLI & Service Accounts:** Leverages `op run` combined with non-human machine tokens. Physical secrets are replaced with secret reference URIs (`op://HomeLab/Item/Field`), injecting credentials directly into application RAM at launch while keeping Git repositories and backups completely secret-free.
 
 ---
 
