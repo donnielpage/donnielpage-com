@@ -9,7 +9,7 @@ Over the past 20+ years, I have specialized in bridging complex, low-level syste
 
 ---
 
-## 🎯 What I Do
+## What I Do
 
 * **Pre-Sales Solutions Leadership:** Partnering with Enterprise Account Executives and C-suite decision-makers (CTO, CISO, VP of Infrastructure) to navigate complex technical sales cycles, de-risk technical evaluations, and compress 14–21 day Proof-of-Value (PoV) milestones using MEDDPICC governance.
 * **Infrastructure as Code (IaC) & Cloud Control Planes:** Deep architectural expertise in Terraform, OpenTofu, Pulumi, Spacelift, and env0, designing multi-cloud governance and self-service developer platforms.
@@ -18,7 +18,7 @@ Over the past 20+ years, I have specialized in bridging complex, low-level syste
 
 ---
 
-## 🔬 The Homelab & Engineering Philosophy
+## The Homelab & Engineering Philosophy
 
 I believe the strongest technical leaders remain grounded in real, running code. I maintain a production-grade homelab environment used for architecture testing, comparative platform evaluations, and content authoring:
 
@@ -29,7 +29,7 @@ I believe the strongest technical leaders remain grounded in real, running code.
 
 ---
 
-## 📬 Connect & Collaborate
+## Connect & Collaborate
 
 * **LinkedIn:** [linkedin.com/in/donniepage](https://www.linkedin.com/in/donniepage/)
 * **GitHub:** [github.com/donnielpage](https://github.com/donnielpage)
