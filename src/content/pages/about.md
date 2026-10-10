@@ -23,7 +23,7 @@ Over the past 20+ years, I have specialized in bridging complex, low-level syste
 I believe the strongest technical leaders remain grounded in real, running code. I maintain a production-grade homelab environment used for architecture testing, comparative platform evaluations, and content authoring:
 
 * **Workstations:** Apple Silicon macOS (M-series) running native ARM64 container stacks via OrbStack.
-* **Compute & Servers:** Headless Ubuntu 22.04 LTS nodes (`luke-skywalker`) managing containerized services, databases, and monitoring.
+* **Compute & Servers:** Headless Ubuntu 22.04 LTS servers managing containerized services, databases, and monitoring.
 * **Zero-Trust Tooling:** 1Password Developer Environments (UNIX named pipes), 1Password SSH Agent with biometric commit signing, and scoped API Service Accounts.
 * **Publication Platform:** This site is statically generated using **Astro Paper**, tracked in GitHub, cryptographically signed with 1Password, and served globally from Cloudflare's edge network at zero hosting cost.
 

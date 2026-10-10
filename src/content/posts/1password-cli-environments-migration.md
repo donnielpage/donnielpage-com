@@ -13,7 +13,7 @@ tags:
 description: "How to eliminate plaintext credentials across local macOS projects and headless Ubuntu servers using 1Password named pipes and op CLI secret references."
 ---
 
-## 🧭 Executive Overview: The Dual-Horizon Secrets Architecture
+## Executive Overview: The Dual-Horizon Secrets Architecture
 
 One of the greatest security blind spots in modern software engineering and operations is **credential sprawl in `.env` files**. Developers inadvertently commit them to GitHub, leave them unencrypted on developer laptops, and bake them into staging and production servers.
 
@@ -28,14 +28,14 @@ One of the greatest security blind spots in modern software engineering and oper
 │                          │ • 0 bytes written to disk; authorized via Touch ID.         │
 ├──────────────────────────┼─────────────────────────────────────────────────────────────┤
 │ 2. HEADLESS SERVERS      │ • 1Password CLI (`op run`) + SERVICE ACCOUNTS.              │
-│    (Ubuntu `luke-sky`)   │ • Secret Reference URIs (`op://HomeLab/Item/Field`).        │
+│    (Headless Linux nodes)│ • Secret Reference URIs (`op://HomeLab/Item/Field`).        │
 │                          │ • Machine token injection into RAM; safe in git & backups.  │
 └──────────────────────────────────────────────────────────┴─────────────────────────────┘
 ```
 
 ---
 
-## 🛠️ Module 1: Local Mac `.env` Migration
+## Module 1: Local Mac `.env` Migration
 
 1Password’s **Developer Environments** feature mounts `.env` files dynamically using **UNIX named pipes (FIFOs)**. Your local build tools (Next.js, Vite, Node `dotenv`, Python) read the file normally, but the plaintext contents never exist on your SSD.
 
@@ -78,7 +78,7 @@ Notice the **`p`**—it is a **named pipe**, taking up **0 bytes** on disk. When
 
 ---
 
-## 🐧 Module 2: Setting Up 1Password CLI on Headless Servers
+## Module 2: Setting Up 1Password CLI on Headless Servers
 
 Because headless Linux servers lack a desktop GUI or Touch ID sensor, interactive user logins (`op signin`) are not used. Instead, 1Password uses **Service Accounts**—secure machine tokens designed for servers, daemons, and automated environments.
 
@@ -116,7 +116,7 @@ op whoami
 
 ---
 
-## ⚡ Module 3: Zero-Plaintext Runtime Injection (`op run`)
+## Module 3: Zero-Plaintext Runtime Injection (`op run`)
 
 With the service account configured, create a `.env` template that contains **zero secrets**, only pointers:
 
